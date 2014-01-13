@@ -31,6 +31,10 @@ wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | s
 sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" >> /etc/apt/sources.list'
 apt-get update && apt-get install virtualbox-4.2
 
+echo "geany and geany-plugins"
+sudo apt-get install geany geany-plugins
+sudo apt-get install pyflakes coffeescript python-rope geany-plugin-lua pep8
+
 echo "Downloading Aptana Studio 3"
 
 cd /tmp
